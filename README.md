@@ -1,37 +1,42 @@
-Binary Search Tree Dictionary in Java
-Description
-This Java program implements a simple dictionary using a Binary Search Tree (BST) data structure. It allows users to add words with their meanings, remove words, and list all words with their meanings. The program is designed to demonstrate basic BST operations in a Java application.
+# Dictionary Program
 
-Features
-Add Words: Users can add new words along with their meanings to the dictionary.
-Remove Words: Users can remove words from the dictionary.
-List Words: Displays all words and their meanings in the dictionary.
-Track Removed Words: Maintains a list of words that have been removed.
-How to Run
-Ensure you have Java installed on your system.
-Compile the Java files Dictionary.java and WordList.java.
-Run the Dictionary class.
-Usage
-After running the program, you will be presented with a menu:
+This Java program implements a simple dictionary using a binary search tree. It allows users to add words with meanings, list all words and their meanings, and remove words from the dictionary.
 
-Add word
-Remove word
-List all words and meanings
-Exit the program
-Select an option by entering the corresponding number. Follow the prompts to add or remove words, or to list all words in the dictionary.
+## Features
 
-Classes
-Dictionary
-The main class that drives the program. It handles user input and interacts with the WordList class to perform dictionary operations.
+- **Add Word**: Users can add new words along with their meanings to the dictionary.
+- **Remove Word**: Users can remove words from the dictionary.
+- **List Words and Meanings**: Displays all the words in the dictionary along with their meanings.
+- **Track Removed Words**: Keeps a list of all the words that have been removed from the dictionary.
 
-WordList
-This class represents the dictionary and encapsulates the BST logic. It includes methods for adding, removing, searching, and listing words and their meanings.
+## Classes
 
-WordMeaningNode
-A nested static class within WordList representing nodes in the BST. Each node contains a word, its meanings, and pointers to its left and right children.
+The program consists of two main classes:
 
-Limitations & Future Improvements
-The current implementation does not persist data between runs.
-Enhancements can include a GUI for better user interaction and file-based persistence for storing dictionary entries.
-Contributing
-Contributions to the project are welcome. Please ensure to follow best coding practices and add relevant comments to your code.
+### `Dictionary`
+
+This is the main class that provides the user interface for interacting with the dictionary. It handles user inputs and displays the appropriate outputs.
+
+### `WordList`
+
+This class manages the internal workings of the dictionary. It includes methods for inserting, deleting, and listing words and meanings. It uses a binary search tree for storing the words.
+
+## Data Structure
+
+The program uses a binary search tree (BST) for efficient storage and retrieval of words. Each node in the BST represents a word and its meanings.
+
+### `WordMeaningNode`
+
+This nested static class within `WordList` represents the nodes of the binary search tree. Each node contains a word, its meanings, and references to its left and right children in the tree.
+
+## Usage
+
+1. **Add a Word**: Select option 1, then enter the word and its meaning.
+2. **Remove a Word**: Select option 2, then enter the word to remove.
+3. **List All Words**: Select option 3 to see all words and their meanings, along with a list of removed words.
+4. **Exit**: Select option 4 to exit the program.
+
+## Compilation and Execution
+
+Compile the Java files and run the `Dictionary` class to start the program.
+
